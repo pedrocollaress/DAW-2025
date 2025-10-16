@@ -12,7 +12,7 @@ if (value1) {
 
 if (!value1) {
     console.log('Verdadeiro');
-}else {
+} else {
     console.log('False');
 }
 //Saida: Falso
