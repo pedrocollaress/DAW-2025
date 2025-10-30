@@ -10,13 +10,13 @@ export function Header() {
             className="text-white text-sm py-2 px-4 border border-[#333] rounded-sm transition hover:bg-[#333]"
             href="#"
           >
-            Entrar
+            Sign In
           </a>
           <a
             className="text-white text-sm py-2 px-4 bg-[#e50914] border border-[#e50914] rounded-sm transition hover:bg-[#b8070f]"
             href="#"
           >
-            Registrar
+            Sign Up
           </a>
         </div>
       </div>

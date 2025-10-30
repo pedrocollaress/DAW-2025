@@ -6,7 +6,7 @@ export function Footer() {
     <footer className="bg-[#1c1c1c] border-t border-[#333] p-12">
       <div className="my-0 mx-auto max-w-6xl flex flex-col items-center">
         <p className="text-[#a0a0a0] text-xs">
-          The MovieBox 2025 - Todos os direitos são reservados
+          The MovieBox 2025 - All rights reserved
         </p>
         <ul className="flex list-none mt-4 gap-3">
           <li>
