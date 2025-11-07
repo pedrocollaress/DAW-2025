@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { MovieService, type MovieDTO } from "../services/movie.service";
+import { MovieCard } from "./movie-card";
 
 export function MovieContent() {
   const [movies, setMovies] = useState<MovieDTO[]>([]);
@@ -11,8 +12,10 @@ export function MovieContent() {
   }, []);
 
   return (
-    <section className="bg-[#1c1c1c] p-8 grid grid-cols-[repeat(auto-fill, minmax(200px, 1fr))] gap-8 max-w-6xl mx-auto">
-      <p>{JSON.stringify(movies)}</p>
+    <section className="bg-[#1c1c1c] p-8 grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-8 max-w-6xl mx-auto">
+      {movies.map((movies, index) => (
+        <MovieCard key={index} movie={movies} />
+      ))}
     </section>
   );
 }
